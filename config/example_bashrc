@@ -1,0 +1,17 @@
+# File locations
+export CHIA_WORKING=$HOME/chia-beta2
+export CHIA_SCRIPTS=$CHIA_WORKING/chia-bash/scripts
+export CHIA_CONFIG=$CHIA_WORKING/config.sh
+
+# Names for fingerprints
+export KEY_NAMES=( FARMING TRADING ISSUANCE )
+
+# Alternative $CHIA_ROOT
+alias useroot="export CHIA_ROOT=$HOME/.chia/beta"
+
+# Script commands
+alias wallet="source $CHIA_SCRIPTS/wallet.sh"
+alias show="source $CHIA_SCRIPTS/show.sh"
+alias start="source $CHIA_SCRIPTS/start.sh"
+alias assets="source $CHIA_SCRIPTS/asset_ids.sh"
+
