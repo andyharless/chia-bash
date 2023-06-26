@@ -9,14 +9,15 @@
 #   export FARMING=987654321
 #   export TRADING=123456789
 
-# After this script runs, $wallets[$FARMING] will contain the name FARMING
+# After this script is sourced, $wallets[$FARMING] will contain the name FARMING
 
 declare -A wallets
 wallets=()
 
-# $KEY_NAMES is an array defined in the configuration 
+# $KEY_NAMES is an array defined in the configuration
+#   containing a list account names in arbitrary order 
 # For example ~/.bashrc might contain the following
-# export KEY_NAMES=( FARMING TRADING )
+#    export KEY_NAMES=( FARMING TRADING )
 
 for name in "${KEY_NAMES[@]}"
 do

@@ -1,5 +1,19 @@
 # Script to show wallet information
 
+# Example:
+#    $ alias show="source $CHIA_SCRIPTS/show.sh"
+#    $ export WALLET=$MYWALLET
+#    $ show USDS
+#    Wallet is MYWALLET
+#    Stably USD (USDS):
+#       -Total Balance:         18.509  (18509 mojo)
+#       -Pending Total Balance: 18.509  (18509 mojo)
+#       -Spendable:             0.0  (0 mojo)
+#       -Type:                  CAT
+#       -Asset ID:              6d95dae356e32a71db5ddcb42224754a02524c615c5fc35f568c2af04774e589
+#       -Wallet ID:             3
+
+
 # Identify current fingerprint
 source $CHIA_SCRIPTS/wallet.sh
 

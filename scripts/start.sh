@@ -1,5 +1,17 @@
 # Log into a fingerprint and sync it
 
+# Example:
+#   $ export WALLET=$MYWALLET
+#   $ alias start="source $CHIA_SCRIPTS/start.sh"
+#   $ start
+#   "success": true
+#   Syncing wallet MYWALLET
+#   .
+#   .
+#   .
+#   "synced": true,
+#   $
+
 # The fingerprint to use is defined by the $WALLET environment variable
 # (I usually have multiple 'terminals' open with different $WALLET settings.)
 
