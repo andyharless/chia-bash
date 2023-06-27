@@ -4,7 +4,7 @@
 #   $ export WALLET=$MYWALLET
 #   $ alias start="source $CHIA_SCRIPTS/start.sh"
 #   $ start
-#   "success": true
+#       "success": true
 #   Syncing wallet MYWALLET
 #   .
 #   .

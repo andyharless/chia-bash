@@ -1,17 +1,30 @@
 # File locations
 export CHIA_WORKING=$HOME/chia-beta2
 export CHIA_SCRIPTS=$CHIA_WORKING/chia-bash/scripts
-export CHIA_CONFIG=$CHIA_WORKING/config.sh
+export TIBET_SCRIPTS=$CHIA_WORKING/chia-bash/tibet-scripts
+export CHIA_CONFIG=$CHIA_WORKING/config
 
 # Names for fingerprints
 export KEY_NAMES=( FARMING TRADING ISSUANCE )
 
 # Alternative $CHIA_ROOT
-alias useroot="export CHIA_ROOT=$HOME/.chia/beta"
+export ALTROOT=$HOME/.chia/beta
+alias useroot="export CHIA_ROOT=$ALTROOT"
 
 # Script commands
 alias wallet="source $CHIA_SCRIPTS/wallet.sh"
 alias show="source $CHIA_SCRIPTS/show.sh"
 alias start="source $CHIA_SCRIPTS/start.sh"
 alias assets="source $CHIA_SCRIPTS/asset_ids.sh"
+alias open="source $CHIA_SCRIPTS/open.sh"
+alias sendto="$CHIA_SCRIPTS/sendto.sh"
+alias addtoken="$CHIA_SCRIPTS/addtoken.sh"
 
+alias addliq="$TIBET_SCRIPTS/addliq.sh"
+
+# Default fees
+export FEE=0.0000001
+export BIGFEE=0.001
+
+# Default key
+alias DEFAULT_KEY=$TRADING
