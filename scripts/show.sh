@@ -35,10 +35,18 @@ ids+=([PUMP]="(PUMP)" [TIBET-PUMP]=TIBET-PUMP [INCL4]="(INCL4)" [TIBET-INCL4]=TI
 ids+=([CTK]="(CTK)" [TIBET-BIGD]=TIBET-BIGD)
 
 if [[ $FROM_SYMBOL == "" ]]; then
-    # Show all assets
+    # Show infromation for all assets
     chia wallet show -f $WALLET
+elif [[ $FROM_SYMBOL == ids ]]; then
+    # Show only Wallet IDs for all assets
+    echo > temp.txt
+    echo >> temp.txt
+    echo "Chia (XCH):" >> temp.txt
+    chia wallet show -f $WALLET | grep "Wallet ID" -A 2 | \
+    sed -e 's/   -Wallet ID:            //g' -e "s/--//g" -e "/^$/d" -e '$d' >> temp.txt
+    cat temp.txt | sed -e '{N;s/\n//;}' | sed -r -e "s/(.*)([^\n]{2})$/\2\ \1/" -e '/^$/d'
 else
-    # Show only the asset we want to know about
+    # Show information for only the asset we want to know about
     ASSET=${ids[$FROM_SYMBOL]}
     chia wallet show -f $WALLET | grep "$ASSET" -A 6
 fi

@@ -15,7 +15,7 @@ declare -A wallets
 wallets=()
 
 # $KEY_NAMES is an array defined in the configuration
-#   containing a list account names in arbitrary order 
+#   containing a list of account names in arbitrary order 
 # For example ~/.bashrc might contain the following
 #    export KEY_NAMES=( FARMING TRADING )
 
