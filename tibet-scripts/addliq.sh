@@ -8,6 +8,9 @@
 
 # Example:
 
+# Alias
+#    $ alias addliq="$TIBET_SCRIPTS/addliq.sh"
+
 # TibetSwap virtualenv
 #    $ cd tibet
 #    $ . venv/bin/activate

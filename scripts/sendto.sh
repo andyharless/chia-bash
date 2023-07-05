@@ -1,4 +1,5 @@
 # Example:
+#   alias sendto="source $CHIA_SCRIPTS/sendto.sh"
 #   $AMOUNT=1
 #   $ASSET_WALLET=$USDS
 #   $TO_ADDRESS=$FARMING_RECEIVE_ADDRESS

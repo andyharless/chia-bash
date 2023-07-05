@@ -17,10 +17,15 @@ alias show="source $CHIA_SCRIPTS/show.sh"
 alias start="source $CHIA_SCRIPTS/start.sh"
 alias assets="source $CHIA_SCRIPTS/asset_ids.sh"
 alias open="source $CHIA_SCRIPTS/open.sh"
-alias sendto="$CHIA_SCRIPTS/sendto.sh"
+alias sendto="source $CHIA_SCRIPTS/sendto.sh"
+alias offer="source $CHIA_SCRIPTS/offer.sh"
 alias addtoken="$CHIA_SCRIPTS/addtoken.sh"
+alias canceloffer="$CHIA_SCRIPTS/canceloffer.sh"
+alias showoffer="$CHIA_SCRIPTS/showoffer.sh"
 
 alias addliq="$TIBET_SCRIPTS/addliq.sh"
+alias remliq="$TIBET_SCRIPTS/remliq.sh"
+alias sell="$TIBET_SCRIPTS/sell.sh"
 
 # Default fees
 export FEE=0.0000001

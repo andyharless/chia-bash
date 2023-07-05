@@ -28,7 +28,7 @@ scratch = ''  # A throwaway name in the namespace to assign stuff to
 # The third element is a function to call and assign to the
 #   named variable before doing the concatenation.
 others = {
-         'Kaanos': ('DID', "didn", lambda: didn + 1),
+         'Kaanos': ('NFT', "nftn", lambda: nftn + 1),
          'Pool w': ('POOL', "scratch", lambda: '')
          }
 
