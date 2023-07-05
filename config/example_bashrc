@@ -2,10 +2,14 @@
 export CHIA_WORKING=$HOME/chia-beta2
 export CHIA_SCRIPTS=$CHIA_WORKING/chia-bash/scripts
 export TIBET_SCRIPTS=$CHIA_WORKING/chia-bash/tibet-scripts
-export CHIA_CONFIG=$CHIA_WORKING/config
+export CHIA_CONFIG=$CHIA_WORKING/config   
+# note:  Config examples (including this file) are in chia-bash/config, but
+#        I recommend using a different directory for the customized versions
+#        (and of course the lines analogous to what's in this file
+#         should be in $HOME/.bashrc or some such place)
 
 # Names for fingerprints
-export KEY_NAMES=( FARMING TRADING ISSUANCE )
+export KEY_NAMES=( FARMING TRADING ISSUANCE EXTRA )
 
 # Alternative $CHIA_ROOT
 export ALTROOT=$HOME/.chia/beta
@@ -33,3 +37,6 @@ export BIGFEE=0.001
 
 # Default key
 alias DEFAULT_KEY=$TRADING
+
+
+source $CHIA_CONFIG/assign_wallets.sh
