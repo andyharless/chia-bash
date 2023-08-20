@@ -1,3 +1,5 @@
+export WALLET=${WALLET:=$DEFAULT_KEY}
+source $CHIA_SCRIPTS/start.sh
 source $CHIA_SCRIPTS/assign_listed_wallets.sh
 
 case $WALLET in
