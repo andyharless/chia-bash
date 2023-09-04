@@ -29,6 +29,5 @@ if [[ $# -ne 1 ]]; then
   sleep 10
 fi
 
-source $CHIA_SCRIPTS/start.sh
 source $CHIA_CONFIG/assign_wallets.sh
 

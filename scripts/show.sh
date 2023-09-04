@@ -33,6 +33,7 @@ ids+=([TIBET-NKDE]=TIBET-NKDE [PEPE]="(PEPE)" [TIBET-PEPE]=TIBET-PEPE)
 ids+=([DBX]="(DBX)" [MIO]="(MIO)" [BIGD]="(BIGD)" [TIBET-MIO]=TIBET-MIO)
 ids+=([PUMP]="(PUMP)" [TIBET-PUMP]=TIBET-PUMP [INCL4]="(INCL4)" [TIBET-INCL4]=TIBET-INCL4)
 ids+=([CTK]="(CTK)" [TIBET-BIGD]=TIBET-BIGD [TIBET-CTK]=TIBET-CTK)
+ids+=([MBX]="(MBX)" [GOT]="(GOT)" [CC]="(CC)" [TIBET-MBX]=TIBET-MBX)
 
 if [[ $FROM_SYMBOL == "" ]]; then
     # Show infromation for all assets
