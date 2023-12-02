@@ -1,0 +1,2 @@
+echo chia wallet nft mint -i $NFTWALLET -u $URL1,$URL2 -nh $NFTHASH -m $FEE -f $WALLET -ra $TO_WALLET -ta $TO_WALLET -rp $ROYALTY -mu $MURL1,$MURL2 -mh $METAHASH -lu $LURL1 -lh $LHASH
+chia wallet nft mint -i $NFTWALLET -u $URL1,$URL2 -nh $NFTHASH -m $FEE -f $WALLET -ra $TO_WALLET -ta $TO_WALLET -rp $ROYALTY -mu $MURL1,$MURL2 -mh $METAHASH -lu $LURL1 -lh $LHASH

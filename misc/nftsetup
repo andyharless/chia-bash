@@ -1,0 +1,19 @@
+export FEE=0.000001
+
+export TOTNUM=1
+export TO_WALLET=$TO_TRADING
+export NFTWALLET=9
+
+export URL1=
+export URL2=
+export MURL1=
+export MURL2=
+
+export LURL1=https://creativecommons.org/licenses/by/4.0/legalcode.txt
+
+export NFTHASH=
+export METAHASH=
+
+export LHASH=9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411
+export ROYALTY=400
+export SETUP_RUN=true
