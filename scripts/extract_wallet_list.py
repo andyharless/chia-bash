@@ -47,6 +47,8 @@ with open(sys.argv[1]) as f:
                 name = parens.group(0)[1:-1]    # Extract what's between the parens
                 if name[:6] == 'TIBET-':	# Rename TIBET Liquidity assets to
                      name = name.split('-')[1] + '_LIQ'  # to have bash-compatible names
+                if name[:5] == 'HSHG-':	# Rename HSHG Liquidity assets to
+                     name = name.split('-')[1] + '_LIQH'  # to have bash-compatible names
                 print(name, end=" ")		# Add name to list
             elif re.search('\sdid:chia', line): # DID wallets named DIDn, where
                 didn += 1                       #   n is a sequence number
